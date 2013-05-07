@@ -19,7 +19,7 @@
 # OLD SCHOOL ROMAN NUMERALS
 
 def rnumeral number
-	puts "M" * (number / 1000) + "D" * ((number%1000) / 500) + "C"*(((number%1000)%500) / 100)+ "L"*((((number%1000)%500)%100) / 50)+ "X"*(((((number%1000)%500)%100)%50) / 10)+ "V"*((((((number%1000)%500)%100)%50)%10) / 5)+ "I"*(((((((number%1000)%500)%100)%50)%10)%5) / 1)
+	puts "M" * (number / 1000) + "D" * ((number%1000) / 500) + "C"*((number%500) / 100)+ "L"*((number%100) / 50)+ "X"*((number%50) / 10)+ "V"*((number%10) / 5)+ "I"*((number%5) / 1)
 end
 
 puts rnumeral 58
